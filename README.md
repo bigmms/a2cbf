@@ -37,8 +37,8 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 
 2. Run the following script to generate **noise image**, and results will be saved in: `./dataset/trainsets/`.
 ```bash
-$ git clone https://github.com/bigmms/chen_grsl21_tpbf.git
-$ cd chen_grsl21_tpbf
+$ git clone https://github.com/bigmms/a2cbf.git
+$ cd a2cbf
 $ matlab
 >> demo_noise
 ```
