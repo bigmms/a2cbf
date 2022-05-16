@@ -24,18 +24,18 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 * matplotlib 3.5.2
 * sewar 0.4.5
 
-### Model
-* Pre-trained models can be downloaded from [google drive](https://drive.google.com/drive/folders/1iqkGTl8sqoVEaVFo4uoAJiLFtce_f8cu?usp=sharing) or [baidu drive](https://pan.baidu.com/s/1nLrWmgkYNffSJHB1Fsr0Gw) (password: 2wrw).
+<!-- ### Model
+* Pre-trained models can be downloaded from [google drive](https://drive.google.com/drive/folders/1iqkGTl8sqoVEaVFo4uoAJiLFtce_f8cu?usp=sharing) or [baidu drive](https://pan.baidu.com/s/1nLrWmgkYNffSJHB1Fsr0Gw) (password: 2wrw). -->
 
 ### It was tested and runs under the following OSs:
-* Windows 10 with GeForce GTX 1060 GPU
-* Ubuntu 16.04 with NVIDIA GTX 1080 Ti GPU
+* Windows 10 with GeForce GTX 2080 GPU
+* Ubuntu 16.04 with NVIDIA TITAN GPU
 
 ## Preparing Data
-1. To build training dataset, you'll also need following datasets. All the images needs to be cropped into a square, and resize to **256*256**.
+1. To build training dataset, you'll also need following datasets. All the images needs to be cropped into a square, and resize to **128*128**.
 * [DIV2K](http://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip)
 
-2. Run the following script to generate **noise image**, and results will be saved in: `./trainsets/DIV2K/`.
+2. Run the following script to generate **noise image**, and results will be saved in: `./dataset/trainsets/`.
 ```bash
 $ git clone https://github.com/bigmms/chen_grsl21_tpbf.git
 $ cd chen_grsl21_tpbf
@@ -43,23 +43,27 @@ $ matlab
 >> demo_noise
 ```
 
-3. Run the following script to generate **ground truth image**, and results will be saved in: `./data/img_gt/`.
+3. Run the following script to generate **ground truth image**, and results will be saved in: `./dataset/trainsets_gt/`.
 ```bash
 >> demo_BF
 ```
 
 4. Structure of the generated data should be：
 ```
-├── data
-    ├──img_gt             #folder for storing ground truth images
+├── dataset
+    ├──trainsets_gt       #folder for storing ground truth of training set
     │  ├── 0001.png                
     │  ├── 0002.png 
     │  └── ...
-    ├──img_noise          #folder for storing noise images
+    ├──trainsets          #folder for storing noise images of training set
     │  ├── 0001.png
     │  ├── 0002.png
     │  └── ... 
-    └──img_ori            #folder for storing original images
+    ├──testsets_gt        #folder for storing ground truth of validation set
+    │  ├── 0001.png
+    │  ├── 0002.png
+    │  └── ... 
+    └──testsets           #folder for storing noise images of validation set
        ├── 0001.png
        ├── 0002.png
        └── ...
