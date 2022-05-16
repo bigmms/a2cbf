@@ -33,6 +33,7 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 * Windows 10 with GeForce GTX 2080 GPU
 * Ubuntu 16.04 with NVIDIA TITAN GPU
 
+<!-- https://github.com/ChaofWang/Awesome-Super-Resolution/blob/master/dataset.md -->
 ## Preparing Data
 1. To build **training** dataset, you'll also need following datasets. All the images needs to be cropped into a square, resize to **256*256**, and convert to **gray scale**.
 * [DIV2K](http://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip)
@@ -48,8 +49,7 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 * [Flickr1024](https://yingqianwang.github.io/Flickr1024/)
 
 3. Run the following script to generate **noise image**, and save images in: `./dataset/trainsets/`, `./dataset/testset/`, and `./dataset/valset/`, respectively.
-```
-bash
+```bash
 $ git clone https://github.com/bigmms/a2cbf.git
 $ cd a2cbf
 $ matlab
