@@ -88,10 +88,10 @@ $ matlab
 
 ### Demo
 ```
-python test.py --TESTING_DATA_PATH ./dataset/testsets/ --TESTING_GT_PATH ./dataset/testsets_gt/ --LOAD_MODEL_PATH ./my_model/model.npz --SAVE_DIR ./result/ --CROP_SIZE 256
+python test.py --TESTING_DATA_PATH ./dataset/testsets/ --TESTING_GT_PATH ./dataset/testsets_gt/ --LOAD_MODEL_PATH ./my_model/model.npz --SAVE_DIR ./result/ --CROP_SIZE 256 --GPU_ID 0 --TRAIN_BATCH_SIZE 1 --EPISODE_LEN 40
 ```
 
-The test results will be saved in: `./result/`
+The results will be saved in: `./result/`
 
 ## Results
 ![](./figs/demo_manga.png)
@@ -99,7 +99,7 @@ The test results will be saved in: `./result/`
 <!-- <img src="figures/gcce.jpg" alt="Cover" width="40%"/> -->
 
 ## License + Attribution
-The TPBF code is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Commercial usage is not permitted. If you use this code in a scientific publication, please cite the following [paper](https://ieeexplore.ieee.org/document/9746631):
+The A2CBF code is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Commercial usage is not permitted. If you use this code in a scientific publication, please cite the following [paper](https://ieeexplore.ieee.org/document/9746631):
 ```
 @INPROCEEDINGS{9746631,
   	      author={Chen, Bo-Hao and Cheng, Hsiang-Yin and Yin, Jia-Li},
