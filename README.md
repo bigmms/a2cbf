@@ -8,7 +8,7 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 
 **Authors**: Bo-Hao Chen, Hsiang-Yin Cheng, and Jia-Li Yin
 
-**Paper**: PDF
+**Paper**: [PDF](https://ieeexplore.ieee.org/document/9746631)
 
 ## Requirements
 ### Dependencies
