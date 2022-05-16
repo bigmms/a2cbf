@@ -30,7 +30,7 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 <!-- ### Model
 * Pre-trained models can be downloaded from [google drive](https://drive.google.com/drive/folders/1iqkGTl8sqoVEaVFo4uoAJiLFtce_f8cu?usp=sharing) or [baidu drive](https://pan.baidu.com/s/1nLrWmgkYNffSJHB1Fsr0Gw) (password: 2wrw). -->
 
-### It was tested and runs under the following OSs:
+### It was ran and tested under the following OSs:
 * Windows 10 with GeForce GTX 2080 GPU
 * Ubuntu 16.04 with NVIDIA TITAN GPU
 
