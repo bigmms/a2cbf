@@ -81,15 +81,15 @@ The test results will be saved in: `./img_output/`
 <!-- <img src="figures/gcce.jpg" alt="Cover" width="40%"/> -->
 
 ## License + Attribution
-The TPBF code is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Commercial usage is not permitted. If you use this code in a scientific publication, please cite the following [paper](https://ieeexplore.ieee.org/document/9325516):
+The TPBF code is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Commercial usage is not permitted. If you use this code in a scientific publication, please cite the following [paper](https://ieeexplore.ieee.org/document/9746631):
 ```
-@ARTICLE{ChenGRSL2021,  
-	author={Chen, Bo-Hao and Cheng, Hsiang-Yin and Tseng, Yi-Syuan and Yin, Jia-Li}, 
-	journal={IEEE Geoscience and Remote Sensing Letters},   
-	title={Two-Pass Bilateral Smooth Filtering for Remote Sensing Imagery},   
-	year={2022},  
-	volume={19},  
-	number={},  
-	pages={1-5},  
-	doi={10.1109/LGRS.2020.3048488}}
+@INPROCEEDINGS{9746631,
+  	      author={Chen, Bo-Hao and Cheng, Hsiang-Yin and Yin, Jia-Li},
+  	      booktitle={ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  	      title={Adaptive Actor-Critic Bilateral Filter}, 
+  	      year={2022},
+  	      volume={},
+  	      number={},
+  	      pages={1675-1679},
+  	      doi={10.1109/ICASSP43922.2022.9746631}}
 ```
