@@ -77,6 +77,7 @@ The test results will be saved in: `./img_output/`
 
 ## Results
 ![](.//demo_manga.png)
+<!-- <img src="figures/gcce.jpg" alt="Cover" width="40%"/> -->
 
 ## License + Attribution
 The TPBF code is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Commercial usage is not permitted. If you use this code in a scientific publication, please cite the following [paper](https://ieeexplore.ieee.org/document/9325516):
