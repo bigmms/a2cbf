@@ -24,7 +24,6 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 * matplotlib 3.5.2
 * sewar 0.4.5
 
-
 ### Model
 * Pre-trained models can be downloaded from [google drive](https://drive.google.com/drive/folders/1iqkGTl8sqoVEaVFo4uoAJiLFtce_f8cu?usp=sharing) or [baidu drive](https://pan.baidu.com/s/1nLrWmgkYNffSJHB1Fsr0Gw) (password: 2wrw).
 
