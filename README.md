@@ -69,10 +69,23 @@ $ matlab
        └── ...
 ```
 
-## Getting Started
-```bash
->> demo_TPBF
+## Getting Started:
+### Usage
+
+* To run this code.
 ```
+python train.py --TRAINING_NOISE_PATH /input/path/ --TRAINING_GT_PATH /gt/path/ --SAVE_PATH /save/model/path/ --VALIDATION_NOISE_PATH /val/input/path --VALIDATION_GT_PATH /val/gt/path/
+```
+
+* To run with different settings, add ```--LEARNING_RATE```, ```--GAMMA```, ```--GPU_ID```, ```--N_EPISODES```, ```--CROP_SIZE```, ```--TRAIN_BATCH_SIZE```, ```--EPISODE_LEN```, as you need.
+
+
+### Demo
+To test this code
+```
+python agent_test.py --model_path ./checkpoints/test_run.ckpt-700 --data_dir ./test/Images/ --output_dir ./result/
+```
+
 The test results will be saved in: `./img_output/`
 
 ## Results
