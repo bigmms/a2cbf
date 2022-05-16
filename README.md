@@ -34,10 +34,10 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 * Ubuntu 16.04 with NVIDIA TITAN GPU
 
 ## Preparing Data
-1. To build training dataset, you'll also need following datasets. All the images needs to be cropped into a square, resize to **256*256**, and convert to **gray scale**.
+1. To build **training** dataset, you'll also need following datasets. All the images needs to be cropped into a square, resize to **256*256**, and convert to **gray scale**.
 * [DIV2K](http://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip)
 
-2. To build validation/testing dataset, you'll also need following datasets. All the images needs to be cropped into a square, resize to **256*256**.
+2. To build **validation/testing** dataset, you'll also need following datasets. All the images needs to be cropped into a square, resize to **256*256**.
 * [Set5](https://uofi.box.com/shared/static/kfahv87nfe8ax910l85dksyl2q212voc.zip)
 * [Set14](https://uofi.box.com/shared/static/igsnfieh4lz68l926l8xbklwsnnk8we9.zip)
 * [BSDS100](https://uofi.box.com/shared/static/qgctsplb8txrksm9to9x01zfa4m61ngq.zip)
@@ -47,20 +47,21 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 * [DTD](https://www.robots.ox.ac.uk/~vgg/data/dtd/)
 * [Flickr1024](https://yingqianwang.github.io/Flickr1024/)
 
-2. Run the following script to generate **noise image**, and results will be saved in: `./dataset/trainsets/`.
-```bash
+3. Run the following script to generate **noise image**, and save images in: `./dataset/trainsets/`, `./dataset/testset/`, and `./dataset/valset/`, respectively.
+```
+bash
 $ git clone https://github.com/bigmms/a2cbf.git
 $ cd a2cbf
 $ matlab
 >> demo_noise
 ```
 
-3. Run the following script to generate **ground truth image**, and results will be saved in: `./dataset/trainsets_gt/`.
+4. Run the following script to generate **ground truth image**, and results will be saved in: `./dataset/trainsets_gt/`, `./dataset/testset_gt/`, and `./dataset/valset_gt/`, respectively.
 ```bash
 >> demo_BF
 ```
 
-4. Structure of the generated data should be：
+5. Structure of the generated data should be：
 ```
 ├── dataset
     ├──trainsets_gt       #folder for storing ground truth of training set
@@ -71,11 +72,19 @@ $ matlab
     │  ├── 0001.png
     │  ├── 0002.png
     │  └── ... 
-    ├──testsets_gt        #folder for storing ground truth of validation/testing set
+    ├──testsets_gt        #folder for storing ground truth of testing set
     │  ├── 0001.png
     │  ├── 0002.png
     │  └── ... 
-    └──testsets           #folder for storing noise images of validation/testing set
+    └──testsets           #folder for storing noise images of testing set
+    │  ├── 0001.png
+    │  ├── 0002.png
+    │  └── ... 
+    ├──val_gt             #folder for storing ground truth of validation set
+    │  ├── 0001.png
+    │  ├── 0002.png
+    │  └── ... 
+    └──valsets            #folder for storing noise images of validation set
        ├── 0001.png
        ├── 0002.png
        └── ...
