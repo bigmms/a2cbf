@@ -33,13 +33,10 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 * Ubuntu 16.04 with NVIDIA GTX 1080 Ti GPU
 
 ## Preparing Data
-1. To build noise dataset, you'll also need following datasets, and put the data in `./data/img_ori/`.
-* [SIPI-Aerials](http://sipi.usc.edu/database/database.php)
-* [COWC](https://gdo152.llnl.gov/cowc/)
-* [Inria-Aerial](https://project.inria.fr/aerialimagelabeling/)
-* [DOTA](https://captain-whu.github.io/DOTA/dataset.html)
+1. To build training dataset, you'll also need following datasets. All the images needs to be cropped into a square, and resize to **256*256**.
+* [DIV2K](http://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip)
 
-2. Run the following script to generate **noise image**, and results will be saved in: `./data/img_noise/`.
+2. Run the following script to generate **noise image**, and results will be saved in: `./trainsets/DIV2K/`.
 ```bash
 $ git clone https://github.com/bigmms/chen_grsl21_tpbf.git
 $ cd chen_grsl21_tpbf
