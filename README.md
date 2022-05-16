@@ -76,7 +76,8 @@ $ matlab
 The test results will be saved in: `./img_output/`
 
 ## Results
-![](.//demo_manga.png)
+![](./figs/demo_manga.png)
+
 <!-- <img src="figures/gcce.jpg" alt="Cover" width="40%"/> -->
 
 ## License + Attribution
