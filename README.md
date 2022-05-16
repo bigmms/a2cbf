@@ -32,7 +32,7 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 * Ubuntu 16.04 with NVIDIA TITAN GPU
 
 ## Preparing Data
-1. To build training dataset, you'll also need following datasets. All the images needs to be cropped into a square, and resize to **128*128**.
+1. To build training dataset, you'll also need following datasets. All the images needs to be cropped into a square, and resize to **256*256**.
 * [DIV2K](http://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip)
 
 2. Run the following script to generate **noise image**, and results will be saved in: `./dataset/trainsets/`.
@@ -76,7 +76,7 @@ $ matlab
 The test results will be saved in: `./img_output/`
 
 ## Results
-![](./docs/results.png)
+![](.//demo_manga.png)
 
 ## License + Attribution
 The TPBF code is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Commercial usage is not permitted. If you use this code in a scientific publication, please cite the following [paper](https://ieeexplore.ieee.org/document/9325516):
