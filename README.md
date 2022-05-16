@@ -23,6 +23,8 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 * Scipy 1.0.0
 * matplotlib 3.5.2
 * sewar 0.4.5
+* MATLAB R2019a
+* MATLAB R2017b
 
 <!-- ### Model
 * Pre-trained models can be downloaded from [google drive](https://drive.google.com/drive/folders/1iqkGTl8sqoVEaVFo4uoAJiLFtce_f8cu?usp=sharing) or [baidu drive](https://pan.baidu.com/s/1nLrWmgkYNffSJHB1Fsr0Gw) (password: 2wrw). -->
@@ -59,11 +61,11 @@ $ matlab
     │  ├── 0001.png
     │  ├── 0002.png
     │  └── ... 
-    ├──testsets_gt        #folder for storing ground truth of validation set
+    ├──testsets_gt        #folder for storing ground truth of validation/testing set
     │  ├── 0001.png
     │  ├── 0002.png
     │  └── ... 
-    └──testsets           #folder for storing noise images of validation set
+    └──testsets           #folder for storing noise images of validation/testing set
        ├── 0001.png
        ├── 0002.png
        └── ...
