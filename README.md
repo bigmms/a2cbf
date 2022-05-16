@@ -34,8 +34,18 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 * Ubuntu 16.04 with NVIDIA TITAN GPU
 
 ## Preparing Data
-1. To build training dataset, you'll also need following datasets. All the images needs to be cropped into a square, and resize to **256*256**.
+1. To build training dataset, you'll also need following datasets. All the images needs to be cropped into a square, resize to **256*256**, and convert to **gray scale**.
 * [DIV2K](http://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip)
+
+2. To build validation/testing dataset, you'll also need following datasets. All the images needs to be cropped into a square, resize to **256*256**.
+* [Set5](https://uofi.box.com/shared/static/kfahv87nfe8ax910l85dksyl2q212voc.zip)
+* [Set14](https://uofi.box.com/shared/static/igsnfieh4lz68l926l8xbklwsnnk8we9.zip)
+* [BSDS100](https://uofi.box.com/shared/static/qgctsplb8txrksm9to9x01zfa4m61ngq.zip)
+* [Urban100](https://uofi.box.com/shared/static/65upg43jjd0a4cwsiqgl6o6ixube6klm.zip)
+* [Manga109](http://www.manga109.org/ja/index.html)
+* [Adobe FiveK](https://data.csail.mit.edu/graphics/fivek/)
+* [DTD](https://www.robots.ox.ac.uk/~vgg/data/dtd/)
+* [Flickr1024](https://yingqianwang.github.io/Flickr1024/)
 
 2. Run the following script to generate **noise image**, and results will be saved in: `./dataset/trainsets/`.
 ```bash
