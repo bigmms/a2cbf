@@ -3,6 +3,8 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=flat-square)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fbigmms%2Fchen_grsl21_tpbf&count_bg=%233D46C8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false)](https://hits.seeyoufarm.com)
 
+![framework](./figs/brief_framework.png)
+
 ## Introduction
 Recent research on edge-preserving image smoothing has suggested that bilateral filtering is vulnerable to maliciously perturbed filtering input. However, while most prior works analyze the adaptation of the range kernel in one-step manner, in this paper we take a more constructive view towards multi-step framework with the goal of unveiling the vulnerability of bilateral filtering. To this end, we adaptively model the width setting of range kernel as a multi-agent reinforcement learning problem and learn an adaptive actor-critic bilateral filter from local image context during successive bilateral filtering operations. By evaluating on eight benchmark datasets, we show that the performance of our filter outperforms that of state-of-the-art bilateral-filtering methods in terms of both salient structures preservation and insignificant textures and perturbation elimination.
 
@@ -12,14 +14,23 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 
 ## Requirements
 ### Dependencies
-* MATLAB R2019a
-* MATLAB R2017b
+* Python 3.5+
+* Chainer 5.0.0
+* ChainerRL 0.5.0
+* Cupy 5.0.0
+* OpenCV 3.4.3.18
+* Numpy 1.16.1
+* Scipy 1.0.0
+* matplotlib 3.5.2
+* sewar 0.4.5
+
+
+### Model
+* Pre-trained models can be downloaded from [google drive](https://drive.google.com/drive/folders/1iqkGTl8sqoVEaVFo4uoAJiLFtce_f8cu?usp=sharing) or [baidu drive](https://pan.baidu.com/s/1nLrWmgkYNffSJHB1Fsr0Gw) (password: 2wrw).
 
 ### It was tested and runs under the following OSs:
-* Windows 10
-* Ubuntu 16.04
-
-Might work under others, but didn't get to test any other OSs just yet.
+* Windows 10 with GeForce GTX 1060 GPU
+* Ubuntu 16.04 with NVIDIA GTX 1080 Ti GPU
 
 ## Preparing Data
 1. To build noise dataset, you'll also need following datasets, and put the data in `./data/img_ori/`.
