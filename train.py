@@ -24,8 +24,8 @@ def parse_args():
     parser.add_argument("--TRAINING_NOISE_PATH", default='./dataset/trainsets/', type=str, help="path of training img")
     parser.add_argument("--TRAINING_GT_PATH", default='./dataset/trainsets_gt/', type=str, help="path of training gt")
     parser.add_argument("--SAVE_PATH", default="./my_model/a2cbf_", type=str, help="path to save model")
-    parser.add_argument("--VALIDATION_NOISE_PATH", default='./dataset/testsets/', type=str, help="path of val img")
-    parser.add_argument("--VALIDATION_GT_PATH", default='./dataset/testsets_gt/', type=str, help="path of val gt")
+    parser.add_argument("--VALIDATION_NOISE_PATH", default='./dataset/valsets/', type=str, help="path of val img")
+    parser.add_argument("--VALIDATION_GT_PATH", default='./dataset/valsets_gt/', type=str, help="path of val gt")
     return parser.parse_args()
 
 def main(opt):
