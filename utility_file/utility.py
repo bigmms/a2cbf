@@ -20,8 +20,7 @@ def psnr_testing(GT, img, print_out=False):
 
 
 class PICTURE():
-    def __init__(self, version, TRAIN_BATCH_SIZE, EPISODE_LEN):
-        self.version = version
+    def __init__(self, TRAIN_BATCH_SIZE, EPISODE_LEN):
         self.TRAIN_BATCH_SIZE = TRAIN_BATCH_SIZE
         self.EPISODE_LEN = EPISODE_LEN
 
@@ -40,14 +39,8 @@ class PICTURE():
 
     def draw_psnr(self, data, e, batch, name):
         steps, psnrs = data
-        # for i in range(TRAIN_BATCH_SIZE):
-        #     plt.plot(steps, psnrs)
-        #     plt.ylabel(name)
-        #     plt.xlabel('step')
-        #     plt.savefig(path + "/batch_%04d.jpg" % batch)
-        #     plt.clf()
         for p in range(self.TRAIN_BATCH_SIZE):
-            path = './pic_%s/episode_%04d/batch_%04d//patch_%04d/' % (self.version, e, batch, p)
+            path = './pic/episode_%04d/batch_%04d//patch_%04d/' % (e, batch, p)
             os.makedirs(path, exist_ok=True)
             BP = []
             for j in range((self.EPISODE_LEN + 1)):
@@ -62,7 +55,7 @@ class PICTURE():
         plt.plot(data[0], data[1], color='r')
         plt.ylabel(name)
         plt.xlabel('state')
-        path = './pic_%s/episode_%04d/' % (self.version, e)
+        path = './pic/episode_%04d/' % e
         # os.makedirs('./%s_graph_%s/' % (name, VERSION), exist_ok=True)
         plt.savefig(path + "/episode_%04d.jpg" % e)
         plt.clf()

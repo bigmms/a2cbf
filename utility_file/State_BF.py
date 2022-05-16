@@ -33,5 +33,3 @@ class State():
                 I = cv2.bilateralFilter(img_255[p, 0, :, :], self.filter_diameter, j, self.sigma_s)
                 self.image[p, 0, :, :] = np.where(self.sigma_r_map[p] == j, I, img_255[p, 0, :, :])
         self.image = np.divide(self.image, 255, dtype=np.float32)
-        # self.sigma_r_map = np.where(self.sigma_r_map < 0, pre_sigma_r_map, self.sigma_r_map)
-        # self.sigma_r_map = np.where(self.sigma_r_map > 1, pre_sigma_r_map, self.sigma_r_map)
