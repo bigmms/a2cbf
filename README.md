@@ -82,17 +82,16 @@ $ matlab
 * Testing
     * To test this code.
     ```
-    python test.py --TESTING_DATA_PATH /testing/input/path/ --TESTING_GT_PATH /testing/gt/path/ --LOAD_MODEL_PATH /load/model/path/ --SAVE_DIR /result/path --VALIDATION_GT_PATH /val/gt/path/
+    python test.py --TESTING_DATA_PATH /testing/input/path/ --TESTING_GT_PATH /testing/gt/path/ --LOAD_MODEL_PATH /load/model/path/ --SAVE_DIR /result/path
     ```
     * To train with different settings, add ```--GPU_ID```, ```--CROP_SIZE```, ```--TRAIN_BATCH_SIZE```, ```--EPISODE_LEN```, as you need.
 
 ### Demo
-To test this code
 ```
-python agent_test.py --model_path ./checkpoints/test_run.ckpt-700 --data_dir ./test/Images/ --output_dir ./result/
+python test.py --TESTING_DATA_PATH ./dataset/testsets/ --TESTING_GT_PATH ./dataset/testsets_gt/ --LOAD_MODEL_PATH ./my_model/model.npz --SAVE_DIR ./result/ --CROP_SIZE 256
 ```
 
-The test results will be saved in: `./img_output/`
+The test results will be saved in: `./result/`
 
 ## Results
 ![](./figs/demo_manga.png)
