@@ -1,0 +1,8 @@
+chainer==5.0.0
+cupy==5.0.0
+chainerrl==0.5.0
+numpy==1.16.1
+scipy==1.0.0
+opencv-python==3.4.3.18
+matplotlib==3.5.2
+sewar==0.4.5
