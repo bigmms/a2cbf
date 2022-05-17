@@ -77,7 +77,7 @@ $ matlab
     │  ├── 0001.png
     │  ├── 0002.png
     │  └── ... 
-    └──testsets           #folder for storing noise images of testing set
+    ├──testsets           #folder for storing noise images of testing set
     │  ├── 0001.png
     │  ├── 0002.png
     │  └── ... 
