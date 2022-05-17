@@ -99,14 +99,14 @@ $ matlab
     python train.py --TRAINING_NOISE_PATH /input/path/ --TRAINING_GT_PATH /gt/path/ --SAVE_PATH /save/model/path/ --VALIDATION_NOISE_PATH /val/input/path --VALIDATION_GT_PATH /val/gt/path/
     ```
 
-    * To train with different settings, add ```--LEARNING_RATE```, ```--GAMMA```, ```--GPU_ID```, ```--N_EPISODES```, ```--CROP_SIZE```, ```--TRAIN_BATCH_SIZE```, ```--EPISODE_LEN```, as you need.
+    * To train with different settings, add ```--LEARNING_RATE```, ```--GAMMA```, ```--GPU_ID```, ```--N_EPISODES```, ```--CROP_SIZE```, ```--TRAIN_BATCH_SIZE```, ```--EPISODE_LEN``` as you need.
 
 * Testing
     * To test this code.
     ```
     python test.py --TESTING_DATA_PATH /testing/input/path/ --TESTING_GT_PATH /testing/gt/path/ --LOAD_MODEL_PATH /load/model/path/ --SAVE_DIR /result/path
     ```
-    * To test with different settings, add ```--GPU_ID```, ```--CROP_SIZE```, ```--TRAIN_BATCH_SIZE```, ```--EPISODE_LEN```, as you need.
+    * To test with different settings, add ```--GPU_ID```, ```--CROP_SIZE```, ```--TRAIN_BATCH_SIZE```, ```--EPISODE_LEN``` as you need.
 
 ### Demo
 ```
