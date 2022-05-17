@@ -57,7 +57,7 @@ $ matlab
 >> demo_noise
 ```
 
-4. Run the following script to generate **ground truth image**, and results will be saved in: `./dataset/trainsets_gt/`, `./dataset/testset_gt/`, and `./dataset/valset_gt/`, respectively.
+4. Run the following script to generate **ground truth image**, and and save images in: `./dataset/trainsets_gt/`, `./dataset/testset_gt/`, and `./dataset/valset_gt/`, respectively.
 ```bash
 >> demo_BF
 ```
