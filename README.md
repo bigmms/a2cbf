@@ -16,13 +16,13 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 ## Requirements
 ### Dependencies
 * Python 3.5+
-* Chainer 5.0.0
-* ChainerRL 0.5.0
-* Cupy 5.0.0
-* OpenCV 3.4.3.18
-* Numpy 1.16.1
-* Scipy 1.0.0
-* matplotlib 3.5.2
+* Chainer 5.0.0+
+* ChainerRL 0.5.0+
+* Cupy 5.0.0+
+* OpenCV 4.2.0.32
+* Numpy 1.19.5
+* Scipy 1.5.4
+* matplotlib 3.1.3
 * sewar 0.4.5
 * MATLAB R2019a
 * MATLAB R2017b
