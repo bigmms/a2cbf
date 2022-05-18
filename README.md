@@ -39,7 +39,7 @@ Recent research on edge-preserving image smoothing has suggested that bilateral 
 1. To build **training** dataset, you'll also need following datasets. All the images needs to be converted to **gray scale**.
 * [DIV2K](http://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip)
 
-2. To build **validation/testing** dataset, you'll also need following datasets. All the images needs to be cropped into a square,  resize to **256*256**.
+2. To build **validation/testing** dataset, you'll also need following datasets. All the images needs to be cropped into a square, and resize to **256*256**.
 * [Set5](https://uofi.box.com/shared/static/kfahv87nfe8ax910l85dksyl2q212voc.zip)
 * [Set14](https://uofi.box.com/shared/static/igsnfieh4lz68l926l8xbklwsnnk8we9.zip)
 * [BSDS100](https://uofi.box.com/shared/static/qgctsplb8txrksm9to9x01zfa4m61ngq.zip)
