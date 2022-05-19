@@ -123,9 +123,9 @@ The results will be saved in: `./result/`
 ## License + Attribution
 The A2CBF code is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Commercial usage is not permitted. If you use this code in a scientific publication, please cite the following [paper](https://ieeexplore.ieee.org/document/9746631) :
 ```
-@INPROCEEDINGS{9746631,
+@INPROCEEDINGS{ChenICASSP22,
   author={Chen, Bo-Hao and Cheng, Hsiang-Yin and Yin, Jia-Li},
-  booktitle={ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
   title={Adaptive Actor-Critic Bilateral Filter}, 
   year={2022},
   volume={},
